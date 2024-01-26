@@ -1,0 +1,47 @@
+/* AddUserDialog Styles */
+.dialog-pane {
+    -fx-padding: 20px;
+    -fx-background-color: #FFFFFF; /* White background for the dialog */
+}
+
+.dialog-pane .text-field, .dialog-pane .password-field {
+    -fx-pref-width: 300px; /* Width of input fields */
+    -fx-font-size: 14px;
+    -fx-border-color: #D8D8D8; /* Light grey border */
+    -fx-border-radius: 4px; /* Rounded corners for input fields */
+    -fx-padding: 10px;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #333; /* Dark grey text */
+}
+
+.dialog-pane .button {
+    -fx-background-color: #4CAF50; /* Green background for buttons */
+    -fx-text-fill: white; /* White text */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #45A049; /* Slightly darker green on hover */
+}
+
+.dialog-pane .add-button {
+    -fx-background-color: #008CBA; /* Blue background for the add button */
+}
+
+.dialog-pane .add-button:hover {
+    -fx-background-color: #0077B3; /* Slightly darker blue on hover */
+}
+
+.dialog-pane .check-box {
+    -fx-font-size: 14px;
+}
+
+/* Error message style, if needed */
+.error-label {
+    -fx-text-fill: red; /* Red color for error messages */
+    -fx-font-size: 12px;
+}

@@ -1,0 +1,55 @@
+.bill-container {
+    -fx-padding: 20px;
+    -fx-background-color: #f8f8f8;
+    -fx-alignment: center;
+}
+
+.statement-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.section {
+    -fx-background-color: #eeeeee;
+    -fx-padding: 10px;
+    -fx-spacing: 5px;
+}
+
+.highlight-section {
+    -fx-background-color: #ffcc00;
+    -fx-padding: 10px;
+    -fx-spacing: 5px;
+}
+
+.section-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666;
+}
+
+.section-value {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.highlight-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.highlight-value {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-background-color: #008CBA;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 36px;
+    -fx-border-radius: 12px;
+}

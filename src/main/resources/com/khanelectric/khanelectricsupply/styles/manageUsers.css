@@ -1,0 +1,59 @@
+/* General TableView styles */
+.table-view {
+    -fx-base: #FFFFFF; /* White background for the table */
+    -fx-control-inner-background: #FFFFFF; /* White background for rows */
+}
+
+/* Header row style */
+.table-view .column-header-background {
+    -fx-background-color: #F3F3F3; /* Light grey background for the header */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px; /* Font size for header text */
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark grey text color for headers */
+}
+
+/* Cell style */
+.table-view .table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: #D3D3D3; /* Light grey border for cells */
+    -fx-border-width: 0 0 1 0; /* Border at the bottom of each cell */
+}
+
+/* Button style in the table */
+.table-view .button {
+    -fx-background-color: #ff6666; /* Red background for delete button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 4px; /* Rounded corners for the button */
+    -fx-padding: 5px 10px;
+}
+
+.table-view .button:hover {
+    -fx-background-color: #e05555; /* Darker shade for hover effect */
+}
+
+/* Aligning headers to the left */
+.table-view .column-header .label {
+    -fx-alignment: center-left; /* Change to center-right if needed */
+    -fx-text-alignment: left; /* Aligns the text within the label */
+}
+
+#customerIdColumn .column-header .label,
+#nameColumn .column-header .label,
+#meterNumberColumn .column-header .label,
+#addressColumn .column-header .label {
+    -fx-alignment: center-left;
+    -fx-text-alignment: left;
+}
+
+#actionsColumn .column-header .label {
+    -fx-alignment: center-right;
+    -fx-text-alignment: right;
+}

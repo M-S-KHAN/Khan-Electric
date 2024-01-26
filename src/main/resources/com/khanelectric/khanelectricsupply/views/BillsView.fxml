@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="billContainer" prefHeight="688.0" prefWidth="687.0" spacing="10" styleClass="bill-container"
+      stylesheets="@../styles/styles.css, @../styles/billsView.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.BillsController">
+    <Text styleClass="statement-title" text="Electricity Bill Details">
+        <VBox.margin>
+            <Insets bottom="15.0"/>
+        </VBox.margin>
+    </Text>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <VBox prefHeight="265.0" prefWidth="375.0" spacing="5" styleClass="section">
+                <Label styleClass="section-label" text="Customer ID"/>
+                <Label fx:id="customerID" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Customer Name"/>
+                <Label fx:id="customerName" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Address"/>
+                <Label fx:id="address" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Meter No."/>
+                <Label fx:id="meterNo" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Status"/>
+                <Label fx:id="status" styleClass="section-value"/>
+            </VBox>
+            <VBox prefHeight="265.0" prefWidth="378.0" spacing="5" styleClass="section">
+                <Label styleClass="section-label" text="Previous Reading"/>
+                <Label fx:id="previousReading" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Current Reading"/>
+                <Label fx:id="currentReading" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Units Consumed"/>
+                <Label fx:id="unitsConsumed" styleClass="section-value"/>
+                <Label styleClass="section-label" text="Due Date"/>
+                <Label fx:id="dueDate" styleClass="section-value"/>
+            </VBox>
+        </children>
+    </HBox>
+    <VBox spacing="5" styleClass="section">
+        <Label styleClass="section-label" text="Per Unit Cost"/>
+        <Label fx:id="hourlyCharge" styleClass="section-value"/>
+        <Label styleClass="section-label" text="Standing Charges"/>
+        <Label fx:id="standingCharge" styleClass="section-value"/>
+        <Label styleClass="section-label" text="VAT (%)"/>
+        <Label fx:id="vatPercentage" styleClass="section-value"/>
+    </VBox>
+    <VBox spacing="5" styleClass="highlight-section">
+        <Label styleClass="highlight-label" text="Total Amount Due"/>
+        <Label fx:id="amountPayable" styleClass="highlight-value"/>
+    </VBox>
+
+</VBox>

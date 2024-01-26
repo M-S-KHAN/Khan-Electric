@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@../styles/styles.css, @../styles/addUser.css"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.AddUserDialogController">
+    <TextField fx:id="customerIdField" promptText="Customer ID"/>
+    <TextField fx:id="fullNameField" promptText="Full Name"/>
+    <TextField fx:id="addressField" promptText="Address"/>
+    <TextField fx:id="meterNumberField" promptText="Meter Number"/>
+    <TextField fx:id="contactNumberField" promptText="Contact Number"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <CheckBox fx:id="isAdminCheckBox" text="Is Admin?"/>
+    <Label fx:id="errorLabel" styleClass="error-label"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Cancel" onAction="#handleCancel"/>
+        <Button text="Add User" onAction="#handleAddUser" styleClass="add-button"/>
+    </HBox>
+</VBox>

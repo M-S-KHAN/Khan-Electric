@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" spacing="10"
+      styleClass="manage-bills-view" stylesheets="@../styles/styles.css, @../styles/manageUsers.css"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.ManageBillsController">
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Text fx:id="topText" styleClass="page-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="addButton" onAction="#handleAddBill" styleClass="add-button" text="Generate New Bill"/>
+    </HBox>
+    <TableView fx:id="billsTable">
+        <columns>
+            <TableColumn fx:id="billIdColumn" text="Bill ID"/>
+            <TableColumn fx:id="customerIdColumn" text="Customer ID"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="meterNumberColumn" text="Meter Number"/>
+            <TableColumn fx:id="addressColumn" text="Address"/>
+            <TableColumn fx:id="amountColumn" text="Amount Payable"/>
+            <TableColumn fx:id="statusColumn" text="Status"/>
+            <TableColumn fx:id="actionsColumn" text="Actions"/>
+        </columns>
+    </TableView>
+</VBox>

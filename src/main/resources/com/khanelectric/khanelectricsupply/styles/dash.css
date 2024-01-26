@@ -1,0 +1,21 @@
+.dashboard-container {
+    -fx-background-color: #f4f4f4; /* Light background for the dashboard */
+    -fx-padding: 20px; /* Padding around the dashboard */
+}
+
+.grid-pane {
+    -fx-alignment: center; /* Center the grid content */
+}
+
+.chart-title {
+    -fx-font-size: 16px; /* Font size for chart titles */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-font-weight: bold; /* Bold font for emphasis */
+}
+
+.chart {
+    -fx-background-color: white; /* White background for charts */
+    -fx-padding: 15px; /* Padding around the charts */
+    -fx-border-color: #d3d3d3; /* Border color for charts */
+    -fx-border-radius: 5px; /* Rounded corners for charts */
+}

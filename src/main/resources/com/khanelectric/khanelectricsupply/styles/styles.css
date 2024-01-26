@@ -1,0 +1,20 @@
+/* styles.css */
+.root {
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif; /* Modern, clean font */
+}
+
+.text-field, .password-field {
+    -fx-background-color: #FFFFFF; /* White background for text fields */
+}
+
+.label {
+    -fx-text-fill: #333; /* Dark grey text for better contrast */
+}
+
+#errorLabel {
+    -fx-text-fill: red; /* Red text color for errors */
+    -fx-font-size: 15px; /* Font size for readability */
+    -fx-font-weight: bold; /* Make it bold to catch attention */
+    -fx-padding: 5px; /* Padding around the text */
+    -fx-wrap-text: true; /* Ensure the text wraps if too long */
+}

@@ -1,0 +1,67 @@
+/* dashboard.css */
+.sidebar {
+    -fx-background-color: #333333; /* Dark background for the sidebar */
+    -fx-padding: 10px;
+    -fx-spacing: 20px; /* Space between elements */
+    -fx-alignment: top-center;
+}
+
+.nav-button {
+    -fx-background-color: transparent; /* Transparent background for buttons */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 16px; /* Font size for buttons */
+    -fx-border: none; /* No border for a clean look */
+    -fx-padding: 10px 20px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #555555; /* Slightly darker background on hover */
+}
+
+.nav-button:focused, .nav-button:default {
+    -fx-background-color: #555555; /* Slightly darker background for focus/default */
+}
+
+.content-area {
+    -fx-padding: 20px;
+    -fx-alignment: center-left;
+    -fx-background-color: #f0f0f0; /* Light grey background for the content area */
+}
+
+.content-label {
+    -fx-font-size: 24px; /* Large font size for welcome label */
+    -fx-text-fill: #333333; /* Dark grey color */
+}
+
+.manage-users-view {
+    -fx-padding: 20px;
+}
+
+.page-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark grey */
+}
+
+.add-button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+.add-button:hover {
+    -fx-background-color: #45A049; /* Slightly darker green on hover */
+}
+
+/* TableView and TableColumn styles */
+.table-view {
+    -fx-base: #FFFFFF; /* White background */
+}
+
+.table-column {
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* You may add more styles for TableView, such as for the header, row, etc. */

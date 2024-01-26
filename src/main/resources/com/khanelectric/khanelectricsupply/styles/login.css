@@ -1,0 +1,38 @@
+/* login.css */
+#loginPane {
+    -fx-background-color: #f0f0f0; /* Light grey background */
+    -fx-alignment: center;
+    -fx-spacing: 15px; /* Space between elements */
+}
+
+#userIdField, #passwordField {
+    -fx-max-width: 350px; /* Adjust the width as necessary */
+    -fx-pref-height: 40px; /* Adjust the height as necessary */
+    -fx-font-size: 16px; /* Larger font size for better readability */
+    -fx-border-color: #d3d3d3; /* Light grey border */
+    -fx-border-radius: 4px; /* Slightly rounded corners for the text fields */
+
+}
+
+.button {
+    -fx-background-color: #008CBA;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 36px;
+    -fx-border-radius: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #006080; /* Darker blue on mouse hover */
+}
+
+#logoImageView {
+    -fx-preserve-ratio: true;
+    -fx-max-height: 150px; /* Adjust the width of the logo as necessary */
+}
+
+#trademarkText {
+    -fx-fill: #a0a0a0; /* Grey color for the trademark text */
+    -fx-font-size: 10px; /* Smaller font size for the trademark text */
+}

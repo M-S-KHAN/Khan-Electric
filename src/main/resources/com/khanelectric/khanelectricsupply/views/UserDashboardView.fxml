@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.UserDashboardController"
+      styleClass="dashboard-container" spacing="20">
+    <!-- Monthly Bill Bar Chart -->
+    <BarChart fx:id="monthlyBillChart" title="Monthly Bill" styleClass="chart" animated="false">
+        <xAxis>
+            <CategoryAxis label="Month"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Amount (£)"/>
+        </yAxis>
+    </BarChart>
+
+    <!-- Monthly Units Consumed Bar Chart -->
+    <BarChart fx:id="monthlyUnitsChart" title="Monthly Units Consumed" styleClass="chart" animated="false">
+        <xAxis>
+            <CategoryAxis label="Month"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Units"/>
+        </yAxis>
+    </BarChart>
+</VBox>

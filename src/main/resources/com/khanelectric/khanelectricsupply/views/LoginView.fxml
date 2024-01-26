@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="loginPane" alignment="CENTER" spacing="20.0" stylesheets="@../styles/styles.css, @../styles/login.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.LoginController">
+    <ImageView fx:id="logoImageView"/>
+    <Label fx:id="errorLabel" styleClass="error-label"/>
+    <TextField fx:id="userIdField" promptText="User ID"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <Button fx:id="loginButton" onAction="#handleLogin" text="Login">
+        <VBox.margin>
+            <Insets bottom="10.0" top="15.0"/>
+        </VBox.margin>
+    </Button>
+    <Text fx:id="trademarkText">© 2024 Khan Electric Supply</Text>
+    <padding>
+        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+    </padding>
+</VBox>

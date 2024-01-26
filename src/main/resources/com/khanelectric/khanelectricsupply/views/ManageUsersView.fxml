@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="10" styleClass="manage-users-view" stylesheets="@../styles/styles.css, @../styles/manageUsers.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.khanelectric.khanelectricsupply.controllers.ManageUsersController">
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Text styleClass="page-title" text="Manage Customers"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="addButton" onAction="#handleAddUser" styleClass="add-button" text="Add"/>
+    </HBox>
+    <TableView fx:id="usersTable">
+        <columns>
+            <TableColumn fx:id="customerIdColumn" text="Customer ID"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="meterNumberColumn" maxWidth="1.7976931348623157E308" text="Meter Number"/>
+            <TableColumn fx:id="addressColumn" text="Address"/>
+            <TableColumn fx:id="actionsColumn" text="Actions"/>
+        </columns>
+    </TableView>
+</VBox>
