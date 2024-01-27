@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
+import java.io.StreamCorruptedException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -57,6 +58,6 @@ class JDataHelperTest {
         Files.writeString(tempFile, "Non-serializable data");
 
         // Attempting to load this data as a serialized object should throw an exception
-        assertThrows(ClassNotFoundException.class, () -> JDataHelper.loadDataFromFile(tempFile.toString()));
+        assertThrows(StreamCorruptedException.class, () -> JDataHelper.loadDataFromFile(tempFile.toString()));
     }
 }

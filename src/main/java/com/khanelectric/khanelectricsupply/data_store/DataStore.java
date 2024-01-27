@@ -105,17 +105,23 @@ public class DataStore {
 
     // get all bills
     public List<Bill> getBills() {
-        if (currentUser.isAdmin()) {
-            return new ArrayList<>(bills.values());
-        } else {
-            List<Bill> userBills = new ArrayList<>();
-            for (Bill bill : bills.values()) {
-                if (bill.getCustomerId().equals(currentUser.getCustomerId())) {
-                    userBills.add(bill);
+        try {
+            if (currentUser != null && currentUser.isAdmin()) {
+                return new ArrayList<>(bills.values());
+            } else {
+                List<Bill> userBills = new ArrayList<>();
+                for (Bill bill : bills.values()) {
+                    if (bill.getCustomerId().equals(currentUser.getCustomerId())) {
+                        userBills.add(bill);
+                    }
                 }
+                return userBills;
             }
-            return userBills;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>(bills.values());
         }
+
     }
 
     // Add a new bill

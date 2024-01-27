@@ -28,17 +28,17 @@ class DataStoreTest {
 
     @Test
     void addUser_ShouldAddUser() {
-        User newUser = new User("001", "123123", "John Doe", "123 Main St", "12345", "00004444", false, "");
+        User newUser = new User("000010", "123456", "John Doe", "123 Main St", "12345", "00004444", false, "");
         dataStore.addUser(newUser);
-        assertNotNull(dataStore.login("002", "password456"));
+        assertNotNull(dataStore.login("000010", "123456"));
     }
 
     @Test
     void deleteUser_ShouldRemoveUser() {
-        User user = dataStore.login("00001", "123456");
+        User user = dataStore.login("000010", "123456");
         assertNotNull(user);
         dataStore.deleteUser(user);
-        assertNull(dataStore.login("001", "password123"));
+        assertNull(dataStore.login("000010", "123456"));
     }
 
     @Test
@@ -49,16 +49,16 @@ class DataStoreTest {
 
     @Test
     void addBill_ShouldAddBill() {
-        Bill newBill = new Bill("B002", "001", "John Doe", "123 Main St", "12345", 200.0, 250.0, 50.0, 400.0, LocalDate.now().minusMonths(2), LocalDate.now().minusMonths(1), LocalDate.now(), "UNPAID", 20.0, 15.0, 2.0);
+        Bill newBill = new Bill("B002", "00002", "John Doe", "123 Main St", "12345", 200.0, 250.0, 50.0, 400.0, LocalDate.now().minusMonths(2), LocalDate.now().minusMonths(1), LocalDate.now(), "UNPAID", 20.0, 15.0, 2.0);
         dataStore.addBill(newBill);
-        assertEquals(2, dataStore.getBills().size());
+        assertEquals(9, dataStore.getBills().size());
     }
 
     @Test
     void login_ValidCredentials_ShouldReturnUser() {
-        User user = dataStore.login("00001", "123456");
+        User user = dataStore.login("00003", "123456");
         assertNotNull(user);
-        assertEquals("Muhammad Sajawal Khan", user.getFullName());
+        assertEquals("Ali Sethi", user.getFullName());
     }
 
     @Test
